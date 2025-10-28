@@ -47,32 +47,34 @@ export default function ActionButtons() {
   };
 
   return (
-    <div className="flex flex-col gap-4 mt-6">
+    <div className="flex flex-col gap-3 sm:gap-4 mt-4 sm:mt-6">
       <Button
         onClick={handleRandomize}
         size="lg"
-        className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold text-xl px-10 py-7 border-4 border-black shadow-lg transition-transform hover:scale-105 w-full"
+        className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold text-base sm:text-lg md:text-xl px-6 sm:px-8 md:px-10 py-5 sm:py-6 md:py-7 border-4 border-black shadow-lg transition-transform hover:scale-105 w-full"
       >
-        <Shuffle className="mr-2 h-6 w-6" />
+        <Shuffle className="mr-1 sm:mr-2 h-5 w-5 sm:h-6 sm:w-6" />
         I&apos;m Feeling Ducky! 🦆
       </Button>
       
-      <div className="flex gap-4 justify-center">
+      <div className="flex gap-2 sm:gap-3 md:gap-4 justify-center">
         <Button
           onClick={handleDownload}
           size="lg"
-          className="bg-black hover:bg-gray-800 text-white font-bold text-lg px-8 py-6 border-4 border-black shadow-lg transition-transform hover:scale-105"
+          className="bg-black hover:bg-gray-800 text-white font-bold text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 border-4 border-black shadow-lg transition-transform hover:scale-105 flex-1"
         >
-          <Download className="mr-2 h-5 w-5" />
-          Download PNG
+          <Download className="mr-1 sm:mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+          <span className="hidden sm:inline">Download PNG</span>
+          <span className="sm:hidden">Download</span>
         </Button>
         <Button
           onClick={handleShare}
           size="lg"
-          className="bg-blue-500 hover:bg-blue-600 text-white font-bold text-lg px-8 py-6 border-4 border-black shadow-lg transition-transform hover:scale-105"
+          className="bg-blue-500 hover:bg-blue-600 text-white font-bold text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 border-4 border-black shadow-lg transition-transform hover:scale-105 flex-1"
         >
-          <Share2 className="mr-2 h-5 w-5" />
-          Share to X
+          <Share2 className="mr-1 sm:mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+          <span className="hidden sm:inline">Share to X</span>
+          <span className="sm:hidden">Share</span>
         </Button>
       </div>
     </div>

@@ -13,35 +13,38 @@ export default function Selector() {
 
   return (
     <Card className="border-4 border-black shadow-lg">
-      <CardContent className="p-4">
+      <CardContent className="p-2 sm:p-3 md:p-4">
         <Tabs>
-          <TabsList className="grid w-full grid-cols-3 mb-4 bg-gray-200 p-1 rounded-lg">
+          <TabsList className="grid w-full grid-cols-3 mb-3 sm:mb-4 bg-gray-200 p-1 rounded-lg">
             <TabsTrigger
               active={activeTab === 'hats'}
               onClick={() => setActiveTab('hats')}
-              className="font-bold data-[state=active]:bg-white"
+              className="font-bold text-xs sm:text-sm md:text-base data-[state=active]:bg-white py-2 sm:py-2.5"
             >
-              🎩 Hats
+              <span className="hidden sm:inline">🎩 Hats</span>
+              <span className="sm:hidden">🎩</span>
             </TabsTrigger>
             <TabsTrigger
               active={activeTab === 'bodies'}
               onClick={() => setActiveTab('bodies')}
-              className="font-bold data-[state=active]:bg-white"
+              className="font-bold text-xs sm:text-sm md:text-base data-[state=active]:bg-white py-2 sm:py-2.5"
             >
-              👕 Bodies
+              <span className="hidden sm:inline">👕 Bodies</span>
+              <span className="sm:hidden">👕</span>
             </TabsTrigger>
             <TabsTrigger
               active={activeTab === 'backgrounds'}
               onClick={() => setActiveTab('backgrounds')}
-              className="font-bold data-[state=active]:bg-white"
+              className="font-bold text-xs sm:text-sm md:text-base data-[state=active]:bg-white py-2 sm:py-2.5"
             >
-              🎨 Backgrounds
+              <span className="hidden sm:inline">🎨 Backgrounds</span>
+              <span className="sm:hidden">🎨</span>
             </TabsTrigger>
           </TabsList>
 
           {activeTab === 'hats' && (
             <TabsContent className="mt-0">
-              <div className="h-[400px] overflow-y-auto pb-8">
+              <div className="h-[300px] sm:h-[350px] md:h-[400px] overflow-y-auto pb-8">
                 <ComponentGrid
                   items={HATS}
                   selectedId={selectedHat}
@@ -54,7 +57,7 @@ export default function Selector() {
 
           {activeTab === 'bodies' && (
             <TabsContent className="mt-0">
-              <div className="h-[400px] overflow-y-auto pb-8">
+              <div className="h-[300px] sm:h-[350px] md:h-[400px] overflow-y-auto pb-8">
                 <ComponentGrid
                   items={BODIES}
                   selectedId={selectedBody}
@@ -67,7 +70,7 @@ export default function Selector() {
 
           {activeTab === 'backgrounds' && (
             <TabsContent className="mt-0">
-              <div className="h-[400px] overflow-y-auto pb-8">
+              <div className="h-[300px] sm:h-[350px] md:h-[400px] overflow-y-auto pb-8">
                 <ComponentGrid
                   items={BACKGROUNDS}
                   selectedId={selectedBackground}
