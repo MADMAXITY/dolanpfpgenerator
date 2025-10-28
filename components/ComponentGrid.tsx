@@ -27,7 +27,7 @@ export default function ComponentGrid({ items, selectedId, onSelect, type }: Com
   };
 
   return (
-    <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-3 lg:grid-cols-4 gap-x-3 gap-y-10 p-4">
+    <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-3 lg:grid-cols-4 gap-3 p-4">
       {showNoneOption && (
         <button
           onClick={(e) => handleSelect(null, e)}
@@ -40,9 +40,6 @@ export default function ComponentGrid({ items, selectedId, onSelect, type }: Com
           )}
         >
           <span className="text-2xl font-bold text-gray-500">✕</span>
-          <div className="absolute -bottom-6 left-0 right-0 text-center">
-            <span className="text-xs font-medium bg-white px-2 py-1 rounded">None</span>
-          </div>
         </button>
       )}
       
@@ -65,9 +62,6 @@ export default function ComponentGrid({ items, selectedId, onSelect, type }: Com
                 background: bg.type === 'solid' ? bg.value : bg.value,
               }}
             >
-              <div className="absolute -bottom-6 left-0 right-0 text-center">
-                <span className="text-xs font-medium bg-white px-2 py-1 rounded">{bg.name}</span>
-              </div>
             </button>
           );
         }
@@ -91,9 +85,6 @@ export default function ComponentGrid({ items, selectedId, onSelect, type }: Com
               className="object-contain p-2"
               unoptimized
             />
-            <div className="absolute -bottom-6 left-0 right-0 text-center">
-              <span className="text-xs font-medium bg-white px-2 py-1 rounded">{component.name}</span>
-            </div>
           </button>
         );
       })}

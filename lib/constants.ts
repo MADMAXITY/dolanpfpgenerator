@@ -11,6 +11,19 @@ export const HATS: ComponentItem[] = [
   { id: 'hat00015', name: 'Cyan Beret', path: '/media/hats/hat00015.PNG', thumbnail: '/media/hats/hat00015.PNG' },
   { id: 'hat00016', name: 'Magenta Beret', path: '/media/hats/hat00016.PNG', thumbnail: '/media/hats/hat00016.PNG' },
   { id: 'hat00017', name: 'Teal Beret', path: '/media/hats/hat00017.PNG', thumbnail: '/media/hats/hat00017.PNG' },
+  { id: 'IMG_1404', name: 'Hat 1', path: '/media/hats/IMG_1404.png', thumbnail: '/media/hats/IMG_1404.png' },
+  { id: 'IMG_1405', name: 'Hat 2', path: '/media/hats/IMG_1405.png', thumbnail: '/media/hats/IMG_1405.png' },
+  { id: 'IMG_1406', name: 'Hat 3', path: '/media/hats/IMG_1406.png', thumbnail: '/media/hats/IMG_1406.png' },
+  { id: 'IMG_1407', name: 'Hat 4', path: '/media/hats/IMG_1407.png', thumbnail: '/media/hats/IMG_1407.png' },
+  { id: 'IMG_1408', name: 'Hat 5', path: '/media/hats/IMG_1408.png', thumbnail: '/media/hats/IMG_1408.png' },
+  { id: 'IMG_1409', name: 'Hat 6', path: '/media/hats/IMG_1409.png', thumbnail: '/media/hats/IMG_1409.png' },
+  { id: 'IMG_1414', name: 'Hat 7', path: '/media/hats/IMG_1414.png', thumbnail: '/media/hats/IMG_1414.png' },
+  { id: 'IMG_1416', name: 'Hat 8', path: '/media/hats/IMG_1416.png', thumbnail: '/media/hats/IMG_1416.png' },
+  { id: 'IMG_1417', name: 'Hat 9', path: '/media/hats/IMG_1417.png', thumbnail: '/media/hats/IMG_1417.png' },
+  { id: 'IMG_1418', name: 'Hat 10', path: '/media/hats/IMG_1418.png', thumbnail: '/media/hats/IMG_1418.png' },
+  { id: 'IMG_1419', name: 'Hat 11', path: '/media/hats/IMG_1419.jpeg', thumbnail: '/media/hats/IMG_1419.jpeg' },
+  { id: 'IMG_1420', name: 'Hat 12', path: '/media/hats/IMG_1420.png', thumbnail: '/media/hats/IMG_1420.png' },
+  { id: 'IMG_1424', name: 'Hat 13', path: '/media/hats/IMG_1424.png', thumbnail: '/media/hats/IMG_1424.png' },
 ];
 
 export const BODIES: ComponentItem[] = [
@@ -20,6 +33,13 @@ export const BODIES: ComponentItem[] = [
   { id: 'image00012', name: 'Red Jacket', path: '/media/bodies/image00012.PNG', thumbnail: '/media/bodies/image00012.PNG' },
   { id: 'image00013', name: 'Yellow Hoodie', path: '/media/bodies/image00013.PNG', thumbnail: '/media/bodies/image00013.PNG' },
   { id: 'image00014', name: 'Purple Tee', path: '/media/bodies/image00014.PNG', thumbnail: '/media/bodies/image00014.PNG' },
+  { id: 'IMG_1411', name: 'Body 1', path: '/media/bodies/IMG_1411.png', thumbnail: '/media/bodies/IMG_1411.png' },
+  { id: 'IMG_1412', name: 'Body 2', path: '/media/bodies/IMG_1412.png', thumbnail: '/media/bodies/IMG_1412.png' },
+  { id: 'IMG_1431', name: 'Body 3', path: '/media/bodies/IMG_1431.png', thumbnail: '/media/bodies/IMG_1431.png' },
+  { id: 'IMG_1432', name: 'Body 4', path: '/media/bodies/IMG_1432.png', thumbnail: '/media/bodies/IMG_1432.png' },
+  { id: 'IMG_1433', name: 'Body 5', path: '/media/bodies/IMG_1433.png', thumbnail: '/media/bodies/IMG_1433.png' },
+  { id: 'IMG_1434', name: 'Body 6', path: '/media/bodies/IMG_1434.png', thumbnail: '/media/bodies/IMG_1434.png' },
+  { id: 'IMG_1435', name: 'Body 7', path: '/media/bodies/IMG_1435.png', thumbnail: '/media/bodies/IMG_1435.png' },
 ];
 
 export const BACKGROUNDS: Background[] = [

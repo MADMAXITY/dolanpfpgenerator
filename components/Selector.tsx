@@ -15,11 +15,11 @@ export default function Selector() {
     <Card className="border-4 border-black shadow-lg">
       <CardContent className="p-2 sm:p-3 md:p-4">
         <Tabs>
-          <TabsList className="grid w-full grid-cols-3 mb-3 sm:mb-4 bg-gray-200 p-1 rounded-lg">
+          <TabsList className="grid w-full grid-cols-3 mb-3 sm:mb-4 bg-gray-200 p-1 rounded-md">
             <TabsTrigger
               active={activeTab === 'hats'}
               onClick={() => setActiveTab('hats')}
-              className="font-bold text-xs sm:text-sm md:text-base data-[state=active]:bg-white py-2 sm:py-2.5"
+              className="font-bold text-xs sm:text-sm md:text-base py-2 sm:py-2.5 rounded-md"
             >
               <span className="hidden sm:inline">🎩 Hats</span>
               <span className="sm:hidden">🎩</span>
@@ -27,7 +27,7 @@ export default function Selector() {
             <TabsTrigger
               active={activeTab === 'bodies'}
               onClick={() => setActiveTab('bodies')}
-              className="font-bold text-xs sm:text-sm md:text-base data-[state=active]:bg-white py-2 sm:py-2.5"
+              className="font-bold text-xs sm:text-sm md:text-base py-2 sm:py-2.5 rounded-md"
             >
               <span className="hidden sm:inline">👕 Bodies</span>
               <span className="sm:hidden">👕</span>
@@ -35,7 +35,7 @@ export default function Selector() {
             <TabsTrigger
               active={activeTab === 'backgrounds'}
               onClick={() => setActiveTab('backgrounds')}
-              className="font-bold text-xs sm:text-sm md:text-base data-[state=active]:bg-white py-2 sm:py-2.5"
+              className="font-bold text-xs sm:text-sm md:text-base py-2 sm:py-2.5 rounded-md"
             >
               <span className="hidden sm:inline">🎨 Backgrounds</span>
               <span className="sm:hidden">🎨</span>
