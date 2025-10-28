@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { useGeneratorStore } from '@/lib/store';
 import { HATS, BODIES, ACCESSORIES, BACKGROUNDS } from '@/lib/constants';
 import { particles } from '@/lib/particles';
+import { sounds } from '@/lib/sounds';
 
 export default function ActionButtons() {
   const { setSelectedHat, setSelectedBody, setSelectedAccessory, setSelectedBackground } = useGeneratorStore();
@@ -20,6 +21,7 @@ export default function ActionButtons() {
       link.href = dataUrl;
       link.click();
       
+      sounds.download();
       particles.successRain();
     } catch (error) {
       console.error('Error downloading image:', error);
@@ -31,6 +33,7 @@ export default function ActionButtons() {
     const twitterUrl = `https://twitter.com/intent/tweet?text=${text}`;
     window.open(twitterUrl, '_blank');
     
+    sounds.share();
     particles.stars();
   };
 
@@ -45,6 +48,7 @@ export default function ActionButtons() {
     setSelectedAccessory(randomAccessory);
     setSelectedBackground(randomBg);
     
+    sounds.random();
     particles.randomExplosion();
   };
 

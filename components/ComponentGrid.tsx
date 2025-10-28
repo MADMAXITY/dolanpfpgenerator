@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { ComponentItem, Background } from '@/types';
 import { cn } from '@/lib/utils';
 import { particles } from '@/lib/particles';
+import { sounds } from '@/lib/sounds';
 
 interface ComponentGridProps {
   items: ComponentItem[] | Background[];
@@ -18,6 +19,13 @@ export default function ComponentGrid({ items, selectedId, onSelect, type }: Com
 
   const handleSelect = (id: string | null, event: React.MouseEvent<HTMLButtonElement>) => {
     onSelect(id);
+    
+    // Play sound effect
+    if (id === null) {
+      sounds.clear();
+    } else {
+      sounds.select();
+    }
     
     const rect = event.currentTarget.getBoundingClientRect();
     const x = (rect.left + rect.width / 2) / window.innerWidth;

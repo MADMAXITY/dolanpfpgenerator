@@ -1,10 +1,12 @@
 import PreviewCard from '@/components/PreviewCard';
 import Selector from '@/components/Selector';
 import ActionButtons from '@/components/ActionButtons';
+import SoundToggle from '@/components/SoundToggle';
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-yellow-300 via-pink-300 to-cyan-300 p-3 sm:p-4 md:p-8 pb-24 sm:pb-8">
+      <SoundToggle />
       <div className="max-w-7xl mx-auto">
         <header className="text-center mb-4 sm:mb-6 md:mb-8">
           <h1 className="font-meme text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-black mb-2 drop-shadow-lg transform -rotate-1">

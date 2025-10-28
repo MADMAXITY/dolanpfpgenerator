@@ -31,6 +31,7 @@ export const HATS: ComponentItem[] = [
   { id: 'IMG_1449', name: 'Hat 19', path: '/media/hats/IMG_1449.png', thumbnail: '/media/hats/IMG_1449.png' },
   { id: 'IMG_1450', name: 'Hat 20', path: '/media/hats/IMG_1450.png', thumbnail: '/media/hats/IMG_1450.png' },
   { id: 'IMG_1453', name: 'Hat 21', path: '/media/hats/IMG_1453.png', thumbnail: '/media/hats/IMG_1453.png' },
+  { id: 'IMG_1491', name: 'Hat 22', path: '/media/hats/IMG_1491.png', thumbnail: '/media/hats/IMG_1491.png' },
 ];
 
 export const BODIES: ComponentItem[] = [
@@ -55,6 +56,23 @@ export const BODIES: ComponentItem[] = [
   { id: 'IMG_1463', name: 'Body 13', path: '/media/bodies/IMG_1463.png', thumbnail: '/media/bodies/IMG_1463.png' },
   { id: 'IMG_1464', name: 'Body 14', path: '/media/bodies/IMG_1464.png', thumbnail: '/media/bodies/IMG_1464.png' },
   { id: 'IMG_1465', name: 'Body 15', path: '/media/bodies/IMG_1465.png', thumbnail: '/media/bodies/IMG_1465.png' },
+  { id: 'IMG_1478', name: 'Body 16', path: '/media/bodies/IMG_1478.png', thumbnail: '/media/bodies/IMG_1478.png' },
+  { id: 'IMG_1479', name: 'Body 17', path: '/media/bodies/IMG_1479.png', thumbnail: '/media/bodies/IMG_1479.png' },
+  { id: 'IMG_1480', name: 'Body 18', path: '/media/bodies/IMG_1480.png', thumbnail: '/media/bodies/IMG_1480.png' },
+  { id: 'IMG_1481', name: 'Body 19', path: '/media/bodies/IMG_1481.png', thumbnail: '/media/bodies/IMG_1481.png' },
+  { id: 'IMG_1482', name: 'Body 20', path: '/media/bodies/IMG_1482.png', thumbnail: '/media/bodies/IMG_1482.png' },
+  { id: 'IMG_1483', name: 'Body 21', path: '/media/bodies/IMG_1483.png', thumbnail: '/media/bodies/IMG_1483.png' },
+  { id: 'IMG_1484', name: 'Body 22', path: '/media/bodies/IMG_1484.png', thumbnail: '/media/bodies/IMG_1484.png' },
+  { id: 'IMG_1485', name: 'Body 23', path: '/media/bodies/IMG_1485.png', thumbnail: '/media/bodies/IMG_1485.png' },
+  { id: 'IMG_1486', name: 'Body 24', path: '/media/bodies/IMG_1486.png', thumbnail: '/media/bodies/IMG_1486.png' },
+  { id: 'IMG_1487', name: 'Body 25', path: '/media/bodies/IMG_1487.png', thumbnail: '/media/bodies/IMG_1487.png' },
+  { id: 'IMG_1488', name: 'Body 26', path: '/media/bodies/IMG_1488.png', thumbnail: '/media/bodies/IMG_1488.png' },
+  { id: 'IMG_1489', name: 'Body 27', path: '/media/bodies/IMG_1489.png', thumbnail: '/media/bodies/IMG_1489.png' },
+  { id: 'IMG_1490', name: 'Body 28', path: '/media/bodies/IMG_1490.png', thumbnail: '/media/bodies/IMG_1490.png' },
+  { id: 'IMG_1492', name: 'Body 29', path: '/media/bodies/IMG_1492.png', thumbnail: '/media/bodies/IMG_1492.png' },
+  { id: 'IMG_1493', name: 'Body 30', path: '/media/bodies/IMG_1493.png', thumbnail: '/media/bodies/IMG_1493.png' },
+  { id: 'IMG_1494', name: 'Body 31', path: '/media/bodies/IMG_1494.png', thumbnail: '/media/bodies/IMG_1494.png' },
+  { id: 'IMG_1495', name: 'Body 32', path: '/media/bodies/IMG_1495.png', thumbnail: '/media/bodies/IMG_1495.png' },
 ];
 
 export const ACCESSORIES: ComponentItem[] = [
@@ -85,6 +103,7 @@ export const BACKGROUNDS: Background[] = [
   { id: 'IMG_1466', name: 'Background 1', type: 'image', value: '', path: '/media/backgrounds/IMG_1466.jpeg', thumbnail: '/media/backgrounds/IMG_1466.jpeg' },
   { id: 'IMG_1467', name: 'Background 2', type: 'image', value: '', path: '/media/backgrounds/IMG_1467.jpeg', thumbnail: '/media/backgrounds/IMG_1467.jpeg' },
   { id: 'IMG_1468', name: 'Background 3', type: 'image', value: '', path: '/media/backgrounds/IMG_1468.jpeg', thumbnail: '/media/backgrounds/IMG_1468.jpeg' },
+  { id: 'IMG_1496', name: 'Background 4', type: 'image', value: '', path: '/media/backgrounds/IMG_1496.jpeg', thumbnail: '/media/backgrounds/IMG_1496.jpeg' },
 ];
 
 export const CANVAS_SIZE = 800;
