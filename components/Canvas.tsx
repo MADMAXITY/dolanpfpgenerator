@@ -54,12 +54,7 @@ export default function Canvas() {
       try {
         if (body) {
           const bodyImg = await loadImage(body.path);
-          const scale = Math.min(CANVAS_SIZE / bodyImg.width, CANVAS_SIZE / bodyImg.height);
-          const width = bodyImg.width * scale;
-          const height = bodyImg.height * scale;
-          const x = (CANVAS_SIZE - width) / 2;
-          const y = (CANVAS_SIZE - height) / 2;
-          ctx.drawImage(bodyImg, x, y, width, height);
+          ctx.drawImage(bodyImg, 0, 0, CANVAS_SIZE, CANVAS_SIZE);
         }
 
         if (accessory) {
@@ -69,12 +64,7 @@ export default function Canvas() {
 
         if (hat) {
           const hatImg = await loadImage(hat.path);
-          const scale = Math.min(CANVAS_SIZE / hatImg.width, CANVAS_SIZE / hatImg.height) * 0.8;
-          const width = hatImg.width * scale;
-          const height = hatImg.height * scale;
-          const x = (CANVAS_SIZE - width) / 2;
-          const y = CANVAS_SIZE * 0.05;
-          ctx.drawImage(hatImg, x, y, width, height);
+          ctx.drawImage(hatImg, 0, 0, CANVAS_SIZE, CANVAS_SIZE);
         }
       } catch (error) {
         console.error('Error loading images:', error);
