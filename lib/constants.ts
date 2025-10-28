@@ -21,7 +21,6 @@ export const HATS: ComponentItem[] = [
   { id: 'IMG_1416', name: 'Hat 8', path: '/media/hats/IMG_1416.png', thumbnail: '/media/hats/IMG_1416.png' },
   { id: 'IMG_1417', name: 'Hat 9', path: '/media/hats/IMG_1417.png', thumbnail: '/media/hats/IMG_1417.png' },
   { id: 'IMG_1418', name: 'Hat 10', path: '/media/hats/IMG_1418.png', thumbnail: '/media/hats/IMG_1418.png' },
-  { id: 'IMG_1419', name: 'Hat 11', path: '/media/hats/IMG_1419.jpeg', thumbnail: '/media/hats/IMG_1419.jpeg' },
   { id: 'IMG_1420', name: 'Hat 12', path: '/media/hats/IMG_1420.png', thumbnail: '/media/hats/IMG_1420.png' },
   { id: 'IMG_1424', name: 'Hat 13', path: '/media/hats/IMG_1424.png', thumbnail: '/media/hats/IMG_1424.png' },
 ];
