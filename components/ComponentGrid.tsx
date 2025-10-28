@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { ComponentItem, Background } from '@/types';
 import { cn } from '@/lib/utils';
+import { particles } from '@/lib/particles';
 
 interface ComponentGridProps {
   items: ComponentItem[] | Background[];
@@ -15,11 +16,21 @@ export default function ComponentGrid({ items, selectedId, onSelect, type }: Com
   const isBackground = type === 'background';
   const showNoneOption = type === 'hat';
 
+  const handleSelect = (id: string | null, event: React.MouseEvent<HTMLButtonElement>) => {
+    onSelect(id);
+    
+    const rect = event.currentTarget.getBoundingClientRect();
+    const x = (rect.left + rect.width / 2) / window.innerWidth;
+    const y = (rect.top + rect.height / 2) / window.innerHeight;
+    
+    particles.sparkles(x, y);
+  };
+
   return (
     <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-3 lg:grid-cols-4 gap-x-3 gap-y-10 p-4">
       {showNoneOption && (
         <button
-          onClick={() => onSelect(null)}
+          onClick={(e) => handleSelect(null, e)}
           className={cn(
             "relative aspect-square rounded-lg border-4 transition-all hover:scale-105",
             "bg-gray-200 flex items-center justify-center",
@@ -43,7 +54,7 @@ export default function ComponentGrid({ items, selectedId, onSelect, type }: Com
           return (
             <button
               key={bg.id}
-              onClick={() => onSelect(bg.id)}
+              onClick={(e) => handleSelect(bg.id, e)}
               className={cn(
                 "relative aspect-square rounded-lg border-4 transition-all hover:scale-105",
                 isSelected
@@ -65,7 +76,7 @@ export default function ComponentGrid({ items, selectedId, onSelect, type }: Com
         return (
           <button
             key={component.id}
-            onClick={() => onSelect(component.id)}
+            onClick={(e) => handleSelect(component.id, e)}
             className={cn(
               "relative aspect-square rounded-lg border-4 transition-all hover:scale-105 bg-gray-100",
               isSelected

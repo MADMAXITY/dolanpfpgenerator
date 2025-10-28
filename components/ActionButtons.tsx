@@ -4,6 +4,7 @@ import { Download, Share2, Shuffle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useGeneratorStore } from '@/lib/store';
 import { HATS, BODIES, BACKGROUNDS } from '@/lib/constants';
+import { particles } from '@/lib/particles';
 
 export default function ActionButtons() {
   const { setSelectedHat, setSelectedBody, setSelectedBackground } = useGeneratorStore();
@@ -18,6 +19,8 @@ export default function ActionButtons() {
       link.download = `dolan-pfp-${Date.now()}.png`;
       link.href = dataUrl;
       link.click();
+      
+      particles.successRain();
     } catch (error) {
       console.error('Error downloading image:', error);
     }
@@ -27,6 +30,8 @@ export default function ActionButtons() {
     const text = encodeURIComponent('Check out my Dolan the Duck PFP! 🦆 #DolanTheDuck #PFP');
     const twitterUrl = `https://twitter.com/intent/tweet?text=${text}`;
     window.open(twitterUrl, '_blank');
+    
+    particles.stars();
   };
 
   const handleRandomize = () => {
@@ -37,6 +42,8 @@ export default function ActionButtons() {
     setSelectedHat(randomHat);
     setSelectedBody(randomBody);
     setSelectedBackground(randomBg);
+    
+    particles.randomExplosion();
   };
 
   return (
