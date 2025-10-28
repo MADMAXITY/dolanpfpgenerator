@@ -23,6 +23,14 @@ export const HATS: ComponentItem[] = [
   { id: 'IMG_1418', name: 'Hat 10', path: '/media/hats/IMG_1418.png', thumbnail: '/media/hats/IMG_1418.png' },
   { id: 'IMG_1420', name: 'Hat 12', path: '/media/hats/IMG_1420.png', thumbnail: '/media/hats/IMG_1420.png' },
   { id: 'IMG_1424', name: 'Hat 13', path: '/media/hats/IMG_1424.png', thumbnail: '/media/hats/IMG_1424.png' },
+  { id: 'IMG_1444', name: 'Hat 14', path: '/media/hats/IMG_1444.png', thumbnail: '/media/hats/IMG_1444.png' },
+  { id: 'IMG_1445', name: 'Hat 15', path: '/media/hats/IMG_1445.png', thumbnail: '/media/hats/IMG_1445.png' },
+  { id: 'IMG_1446', name: 'Hat 16', path: '/media/hats/IMG_1446.png', thumbnail: '/media/hats/IMG_1446.png' },
+  { id: 'IMG_1447', name: 'Hat 17', path: '/media/hats/IMG_1447.png', thumbnail: '/media/hats/IMG_1447.png' },
+  { id: 'IMG_1448', name: 'Hat 18', path: '/media/hats/IMG_1448.png', thumbnail: '/media/hats/IMG_1448.png' },
+  { id: 'IMG_1449', name: 'Hat 19', path: '/media/hats/IMG_1449.png', thumbnail: '/media/hats/IMG_1449.png' },
+  { id: 'IMG_1450', name: 'Hat 20', path: '/media/hats/IMG_1450.png', thumbnail: '/media/hats/IMG_1450.png' },
+  { id: 'IMG_1453', name: 'Hat 21', path: '/media/hats/IMG_1453.png', thumbnail: '/media/hats/IMG_1453.png' },
 ];
 
 export const BODIES: ComponentItem[] = [
@@ -39,6 +47,14 @@ export const BODIES: ComponentItem[] = [
   { id: 'IMG_1433', name: 'Body 5', path: '/media/bodies/IMG_1433.png', thumbnail: '/media/bodies/IMG_1433.png' },
   { id: 'IMG_1434', name: 'Body 6', path: '/media/bodies/IMG_1434.png', thumbnail: '/media/bodies/IMG_1434.png' },
   { id: 'IMG_1435', name: 'Body 7', path: '/media/bodies/IMG_1435.png', thumbnail: '/media/bodies/IMG_1435.png' },
+  { id: 'IMG_1451', name: 'Body 8', path: '/media/bodies/IMG_1451.png', thumbnail: '/media/bodies/IMG_1451.png' },
+  { id: 'IMG_1452', name: 'Body 9', path: '/media/bodies/IMG_1452.png', thumbnail: '/media/bodies/IMG_1452.png' },
+  { id: 'IMG_1456', name: 'Body 10', path: '/media/bodies/IMG_1456.png', thumbnail: '/media/bodies/IMG_1456.png' },
+  { id: 'IMG_1458', name: 'Body 11', path: '/media/bodies/IMG_1458.png', thumbnail: '/media/bodies/IMG_1458.png' },
+  { id: 'IMG_1460', name: 'Body 12', path: '/media/bodies/IMG_1460.png', thumbnail: '/media/bodies/IMG_1460.png' },
+  { id: 'IMG_1463', name: 'Body 13', path: '/media/bodies/IMG_1463.png', thumbnail: '/media/bodies/IMG_1463.png' },
+  { id: 'IMG_1464', name: 'Body 14', path: '/media/bodies/IMG_1464.png', thumbnail: '/media/bodies/IMG_1464.png' },
+  { id: 'IMG_1465', name: 'Body 15', path: '/media/bodies/IMG_1465.png', thumbnail: '/media/bodies/IMG_1465.png' },
 ];
 
 export const ACCESSORIES: ComponentItem[] = [
