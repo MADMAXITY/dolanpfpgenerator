@@ -8,8 +8,10 @@ export interface ComponentItem {
 export interface Background {
   id: string;
   name: string;
-  type: 'solid' | 'gradient';
+  type: 'solid' | 'gradient' | 'image';
   value: string;
+  path?: string;
+  thumbnail?: string;
 }
 
 export type ComponentType = 'hat' | 'body' | 'background' | 'accessory';

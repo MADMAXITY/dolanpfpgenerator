@@ -22,25 +22,6 @@ export default function Canvas() {
 
     ctx.clearRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
 
-    if (background) {
-      if (background.type === 'solid') {
-        ctx.fillStyle = background.value;
-        ctx.fillRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
-      } else {
-        const gradient = ctx.createLinearGradient(0, 0, CANVAS_SIZE, CANVAS_SIZE);
-        const colors = background.value.match(/#[0-9A-Fa-f]{6}/g) || [];
-        const percents = background.value.match(/\d+%/g) || [];
-        
-        colors.forEach((color, i) => {
-          const percent = percents[i] ? parseFloat(percents[i]) / 100 : i / (colors.length - 1);
-          gradient.addColorStop(percent, color);
-        });
-        
-        ctx.fillStyle = gradient;
-        ctx.fillRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
-      }
-    }
-
     const loadImage = (src: string): Promise<HTMLImageElement> => {
       return new Promise((resolve, reject) => {
         const img = new Image();
@@ -51,6 +32,28 @@ export default function Canvas() {
     };
 
     const drawImages = async () => {
+      // Draw background first
+      if (background) {
+        if (background.type === 'solid') {
+          ctx.fillStyle = background.value;
+          ctx.fillRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
+        } else if (background.type === 'gradient') {
+          const gradient = ctx.createLinearGradient(0, 0, CANVAS_SIZE, CANVAS_SIZE);
+          const colors = background.value.match(/#[0-9A-Fa-f]{6}/g) || [];
+          const percents = background.value.match(/\d+%/g) || [];
+          
+          colors.forEach((color, i) => {
+            const percent = percents[i] ? parseFloat(percents[i]) / 100 : i / (colors.length - 1);
+            gradient.addColorStop(percent, color);
+          });
+          
+          ctx.fillStyle = gradient;
+          ctx.fillRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
+        } else if (background.type === 'image' && background.path) {
+          const bgImg = await loadImage(background.path);
+          ctx.drawImage(bgImg, 0, 0, CANVAS_SIZE, CANVAS_SIZE);
+        }
+      }
       try {
         if (body) {
           const bodyImg = await loadImage(body.path);

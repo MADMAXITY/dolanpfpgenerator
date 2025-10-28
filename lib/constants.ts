@@ -82,6 +82,9 @@ export const BACKGROUNDS: Background[] = [
   { id: 'grad-fire', name: 'Fire', type: 'gradient', value: 'linear-gradient(135deg, #FF4500 0%, #FFD700 100%)' },
   { id: 'grad-purple', name: 'Purple Haze', type: 'gradient', value: 'linear-gradient(135deg, #8B00FF 0%, #FF1493 100%)' },
   { id: 'grad-rainbow', name: 'Rainbow', type: 'gradient', value: 'linear-gradient(135deg, #FF0080 0%, #FF8C00 20%, #FFD700 40%, #00FF00 60%, #00FFFF 80%, #8B00FF 100%)' },
+  { id: 'IMG_1466', name: 'Background 1', type: 'image', value: '', path: '/media/backgrounds/IMG_1466.jpeg', thumbnail: '/media/backgrounds/IMG_1466.jpeg' },
+  { id: 'IMG_1467', name: 'Background 2', type: 'image', value: '', path: '/media/backgrounds/IMG_1467.jpeg', thumbnail: '/media/backgrounds/IMG_1467.jpeg' },
+  { id: 'IMG_1468', name: 'Background 3', type: 'image', value: '', path: '/media/backgrounds/IMG_1468.jpeg', thumbnail: '/media/backgrounds/IMG_1468.jpeg' },
 ];
 
 export const CANVAS_SIZE = 800;

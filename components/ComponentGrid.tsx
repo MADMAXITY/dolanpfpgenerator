@@ -48,6 +48,30 @@ export default function ComponentGrid({ items, selectedId, onSelect, type }: Com
         
         if (isBackground) {
           const bg = item as Background;
+          
+          if (bg.type === 'image' && bg.thumbnail) {
+            return (
+              <button
+                key={bg.id}
+                onClick={(e) => handleSelect(bg.id, e)}
+                className={cn(
+                  "relative aspect-square rounded-lg border-4 transition-all hover:scale-105 bg-gray-100 overflow-hidden",
+                  isSelected
+                    ? "border-black shadow-lg scale-105"
+                    : "border-gray-300 hover:border-gray-400"
+                )}
+              >
+                <Image
+                  src={bg.thumbnail}
+                  alt={bg.name}
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+              </button>
+            );
+          }
+          
           return (
             <button
               key={bg.id}
