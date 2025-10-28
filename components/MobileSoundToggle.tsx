@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { Volume2, VolumeX } from 'lucide-react';
 import { sounds } from '@/lib/sounds';
 
-export default function SoundToggle() {
+export default function MobileSoundToggle() {
   const [isMuted, setIsMuted] = useState(true);
 
   useEffect(() => {
@@ -24,14 +24,15 @@ export default function SoundToggle() {
   return (
     <button
       onClick={handleToggle}
-      className="hidden lg:flex fixed top-4 right-4 z-50 bg-white/90 hover:bg-white backdrop-blur-sm p-3 rounded-full border-4 border-black shadow-lg transition-all hover:scale-110"
+      className="flex flex-col items-center gap-1 text-black hover:text-gray-700 transition-colors"
       title={isMuted ? 'Unmute sounds' : 'Mute sounds'}
     >
       {isMuted ? (
-        <VolumeX className="w-6 h-6 text-black" />
+        <VolumeX className="w-6 h-6" />
       ) : (
-        <Volume2 className="w-6 h-6 text-black" />
+        <Volume2 className="w-6 h-6" />
       )}
+      <span className="text-xs font-bold">Sound</span>
     </button>
   );
 }

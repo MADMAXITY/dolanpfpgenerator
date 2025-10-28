@@ -2,6 +2,7 @@ import PreviewCard from '@/components/PreviewCard';
 import Selector from '@/components/Selector';
 import ActionButtons from '@/components/ActionButtons';
 import SoundToggle from '@/components/SoundToggle';
+import MobileSoundToggle from '@/components/MobileSoundToggle';
 
 export default function Home() {
   return (
@@ -98,6 +99,8 @@ export default function Home() {
         {/* Mobile bottom social links */}
         <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-t-4 border-black shadow-lg">
           <div className="flex justify-around items-center py-3 px-2">
+            <MobileSoundToggle />
+            
             <a
               href="https://x.com/DolanDuckSol69"
               target="_blank"
