@@ -55,16 +55,25 @@ export default function Canvas() {
         }
       }
       try {
+        // Draw accessory behind body (wings, capes, auras, etc.)
+        if (accessory && accessory.layer === 'behind') {
+          const accessoryImg = await loadImage(accessory.path);
+          ctx.drawImage(accessoryImg, 0, 0, CANVAS_SIZE, CANVAS_SIZE);
+        }
+
+        // Draw body
         if (body) {
           const bodyImg = await loadImage(body.path);
           ctx.drawImage(bodyImg, 0, 0, CANVAS_SIZE, CANVAS_SIZE);
         }
 
-        if (accessory) {
+        // Draw accessory in front of body (glasses, chains, masks, etc.)
+        if (accessory && (!accessory.layer || accessory.layer === 'front')) {
           const accessoryImg = await loadImage(accessory.path);
           ctx.drawImage(accessoryImg, 0, 0, CANVAS_SIZE, CANVAS_SIZE);
         }
 
+        // Draw hat on top
         if (hat) {
           const hatImg = await loadImage(hat.path);
           ctx.drawImage(hatImg, 0, 0, CANVAS_SIZE, CANVAS_SIZE);

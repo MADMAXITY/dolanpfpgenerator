@@ -3,6 +3,7 @@ export interface ComponentItem {
   name: string;
   path: string;
   thumbnail: string;
+  layer?: 'behind' | 'front'; // For accessories: behind body or in front
 }
 
 export interface Background {
