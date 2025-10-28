@@ -32,6 +32,8 @@ export const HATS: ComponentItem[] = [
   { id: 'IMG_1450', name: 'Hat 20', path: '/media/hats/IMG_1450.png', thumbnail: '/media/hats/IMG_1450.png' },
   { id: 'IMG_1453', name: 'Hat 21', path: '/media/hats/IMG_1453.png', thumbnail: '/media/hats/IMG_1453.png' },
   { id: 'IMG_1491', name: 'Hat 22', path: '/media/hats/IMG_1491.png', thumbnail: '/media/hats/IMG_1491.png' },
+  { id: 'IMG_1518', name: 'Hat 23', path: '/media/hats/IMG_1518.png', thumbnail: '/media/hats/IMG_1518.png' },
+  { id: 'IMG_1519', name: 'Hat 24', path: '/media/hats/IMG_1519.png', thumbnail: '/media/hats/IMG_1519.png' },
 ];
 
 export const BODIES: ComponentItem[] = [
@@ -73,6 +75,10 @@ export const BODIES: ComponentItem[] = [
   { id: 'IMG_1493', name: 'Body 30', path: '/media/bodies/IMG_1493.png', thumbnail: '/media/bodies/IMG_1493.png' },
   { id: 'IMG_1494', name: 'Body 31', path: '/media/bodies/IMG_1494.png', thumbnail: '/media/bodies/IMG_1494.png' },
   { id: 'IMG_1495', name: 'Body 32', path: '/media/bodies/IMG_1495.png', thumbnail: '/media/bodies/IMG_1495.png' },
+  { id: 'IMG_1520', name: 'Body 33', path: '/media/bodies/IMG_1520.png', thumbnail: '/media/bodies/IMG_1520.png' },
+  { id: 'IMG_1521', name: 'Body 34', path: '/media/bodies/IMG_1521.png', thumbnail: '/media/bodies/IMG_1521.png' },
+  { id: 'IMG_1522', name: 'Body 35', path: '/media/bodies/IMG_1522.png', thumbnail: '/media/bodies/IMG_1522.png' },
+  { id: 'IMG_1523', name: 'Body 36', path: '/media/bodies/IMG_1523.png', thumbnail: '/media/bodies/IMG_1523.png' },
 ];
 
 export const ACCESSORIES: ComponentItem[] = [
@@ -112,6 +118,11 @@ export const BACKGROUNDS: Background[] = [
   { id: 'IMG_1467', name: 'Background 2', type: 'image', value: '', path: '/media/backgrounds/IMG_1467.jpeg', thumbnail: '/media/backgrounds/IMG_1467.jpeg' },
   { id: 'IMG_1468', name: 'Background 3', type: 'image', value: '', path: '/media/backgrounds/IMG_1468.jpeg', thumbnail: '/media/backgrounds/IMG_1468.jpeg' },
   { id: 'IMG_1496', name: 'Background 4', type: 'image', value: '', path: '/media/backgrounds/IMG_1496.jpeg', thumbnail: '/media/backgrounds/IMG_1496.jpeg' },
+  { id: 'IMG_1513', name: 'Background 5', type: 'image', value: '', path: '/media/backgrounds/IMG_1513.jpeg', thumbnail: '/media/backgrounds/IMG_1513.jpeg' },
+  { id: 'IMG_1514', name: 'Background 6', type: 'image', value: '', path: '/media/backgrounds/IMG_1514.jpeg', thumbnail: '/media/backgrounds/IMG_1514.jpeg' },
+  { id: 'IMG_1515', name: 'Background 7', type: 'image', value: '', path: '/media/backgrounds/IMG_1515.jpeg', thumbnail: '/media/backgrounds/IMG_1515.jpeg' },
+  { id: 'IMG_1516', name: 'Background 8', type: 'image', value: '', path: '/media/backgrounds/IMG_1516.jpeg', thumbnail: '/media/backgrounds/IMG_1516.jpeg' },
+  { id: 'IMG_1517', name: 'Background 9', type: 'image', value: '', path: '/media/backgrounds/IMG_1517.jpeg', thumbnail: '/media/backgrounds/IMG_1517.jpeg' },
 ];
 
 export const CANVAS_SIZE = 800;
