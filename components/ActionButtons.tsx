@@ -3,11 +3,11 @@
 import { Download, Share2, Shuffle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useGeneratorStore } from '@/lib/store';
-import { HATS, BODIES, BACKGROUNDS } from '@/lib/constants';
+import { HATS, BODIES, ACCESSORIES, BACKGROUNDS } from '@/lib/constants';
 import { particles } from '@/lib/particles';
 
 export default function ActionButtons() {
-  const { setSelectedHat, setSelectedBody, setSelectedBackground } = useGeneratorStore();
+  const { setSelectedHat, setSelectedBody, setSelectedAccessory, setSelectedBackground } = useGeneratorStore();
 
   const handleDownload = async () => {
     const canvas = document.getElementById('dolan-canvas') as HTMLCanvasElement;
@@ -37,10 +37,12 @@ export default function ActionButtons() {
   const handleRandomize = () => {
     const randomHat = Math.random() < 0.3 ? null : HATS[Math.floor(Math.random() * HATS.length)].id;
     const randomBody = BODIES[Math.floor(Math.random() * BODIES.length)].id;
+    const randomAccessory = Math.random() < 0.5 ? null : ACCESSORIES[Math.floor(Math.random() * ACCESSORIES.length)].id;
     const randomBg = BACKGROUNDS[Math.floor(Math.random() * BACKGROUNDS.length)].id;
     
     setSelectedHat(randomHat);
     setSelectedBody(randomBody);
+    setSelectedAccessory(randomAccessory);
     setSelectedBackground(randomBg);
     
     particles.randomExplosion();

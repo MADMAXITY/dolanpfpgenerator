@@ -9,12 +9,12 @@ interface ComponentGridProps {
   items: ComponentItem[] | Background[];
   selectedId: string | null;
   onSelect: (id: string | null) => void;
-  type: 'hat' | 'body' | 'background';
+  type: 'hat' | 'body' | 'background' | 'accessory';
 }
 
 export default function ComponentGrid({ items, selectedId, onSelect, type }: ComponentGridProps) {
   const isBackground = type === 'background';
-  const showNoneOption = type === 'hat';
+  const showNoneOption = type === 'hat' || type === 'accessory';
 
   const handleSelect = (id: string | null, event: React.MouseEvent<HTMLButtonElement>) => {
     onSelect(id);

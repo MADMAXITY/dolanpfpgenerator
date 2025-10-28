@@ -2,11 +2,11 @@
 
 import { useEffect, useRef } from 'react';
 import { useGeneratorStore } from '@/lib/store';
-import { HATS, BODIES, BACKGROUNDS, CANVAS_SIZE } from '@/lib/constants';
+import { HATS, BODIES, ACCESSORIES, BACKGROUNDS, CANVAS_SIZE } from '@/lib/constants';
 
 export default function Canvas() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const { selectedHat, selectedBody, selectedBackground } = useGeneratorStore();
+  const { selectedHat, selectedBody, selectedAccessory, selectedBackground } = useGeneratorStore();
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -17,6 +17,7 @@ export default function Canvas() {
 
     const background = BACKGROUNDS.find((bg) => bg.id === selectedBackground);
     const body = BODIES.find((b) => b.id === selectedBody);
+    const accessory = selectedAccessory ? ACCESSORIES.find((a) => a.id === selectedAccessory) : null;
     const hat = selectedHat ? HATS.find((h) => h.id === selectedHat) : null;
 
     ctx.clearRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
@@ -61,6 +62,11 @@ export default function Canvas() {
           ctx.drawImage(bodyImg, x, y, width, height);
         }
 
+        if (accessory) {
+          const accessoryImg = await loadImage(accessory.path);
+          ctx.drawImage(accessoryImg, 0, 0, CANVAS_SIZE, CANVAS_SIZE);
+        }
+
         if (hat) {
           const hatImg = await loadImage(hat.path);
           const scale = Math.min(CANVAS_SIZE / hatImg.width, CANVAS_SIZE / hatImg.height) * 0.8;
@@ -76,7 +82,7 @@ export default function Canvas() {
     };
 
     drawImages();
-  }, [selectedHat, selectedBody, selectedBackground]);
+  }, [selectedHat, selectedBody, selectedAccessory, selectedBackground]);
 
   return (
     <canvas

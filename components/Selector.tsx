@@ -5,17 +5,17 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 import { Card, CardContent } from '@/components/ui/card';
 import ComponentGrid from './ComponentGrid';
 import { useGeneratorStore } from '@/lib/store';
-import { HATS, BODIES, BACKGROUNDS } from '@/lib/constants';
+import { HATS, BODIES, ACCESSORIES, BACKGROUNDS } from '@/lib/constants';
 
 export default function Selector() {
   const [activeTab, setActiveTab] = useState('hats');
-  const { selectedHat, selectedBody, selectedBackground, setSelectedHat, setSelectedBody, setSelectedBackground } = useGeneratorStore();
+  const { selectedHat, selectedBody, selectedAccessory, selectedBackground, setSelectedHat, setSelectedBody, setSelectedAccessory, setSelectedBackground } = useGeneratorStore();
 
   return (
     <Card className="border-4 border-black shadow-lg">
       <CardContent className="p-2 sm:p-3 md:p-4">
         <Tabs>
-          <TabsList className="grid w-full grid-cols-3 mb-3 sm:mb-4 bg-gray-200 p-1 rounded-md">
+          <TabsList className="grid w-full grid-cols-4 mb-3 sm:mb-4 bg-gray-200 p-1 rounded-md">
             <TabsTrigger
               active={activeTab === 'hats'}
               onClick={() => setActiveTab('hats')}
@@ -31,6 +31,14 @@ export default function Selector() {
             >
               <span className="hidden sm:inline">👕 Bodies</span>
               <span className="sm:hidden">👕</span>
+            </TabsTrigger>
+            <TabsTrigger
+              active={activeTab === 'accessories'}
+              onClick={() => setActiveTab('accessories')}
+              className="font-bold text-xs sm:text-sm md:text-base py-2 sm:py-2.5 rounded-md"
+            >
+              <span className="hidden sm:inline">😎 Accessories</span>
+              <span className="sm:hidden">😎</span>
             </TabsTrigger>
             <TabsTrigger
               active={activeTab === 'backgrounds'}
@@ -63,6 +71,19 @@ export default function Selector() {
                   selectedId={selectedBody}
                   onSelect={setSelectedBody}
                   type="body"
+                />
+              </div>
+            </TabsContent>
+          )}
+
+          {activeTab === 'accessories' && (
+            <TabsContent className="mt-0">
+              <div className="h-[300px] sm:h-[350px] md:h-[400px] overflow-y-auto pb-8">
+                <ComponentGrid
+                  items={ACCESSORIES}
+                  selectedId={selectedAccessory}
+                  onSelect={setSelectedAccessory}
+                  type="accessory"
                 />
               </div>
             </TabsContent>

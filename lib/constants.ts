@@ -42,6 +42,18 @@ export const BODIES: ComponentItem[] = [
   { id: 'IMG_1435', name: 'Body 7', path: '/media/bodies/IMG_1435.png', thumbnail: '/media/bodies/IMG_1435.png' },
 ];
 
+export const ACCESSORIES: ComponentItem[] = [
+  { id: 'IMG_1410', name: 'Accessory 1', path: '/media/accessories/IMG_1410.png', thumbnail: '/media/accessories/IMG_1410.png' },
+  { id: 'IMG_1425', name: 'Accessory 3', path: '/media/accessories/IMG_1425.png', thumbnail: '/media/accessories/IMG_1425.png' },
+  { id: 'IMG_1426', name: 'Accessory 4', path: '/media/accessories/IMG_1426.png', thumbnail: '/media/accessories/IMG_1426.png' },
+  { id: 'IMG_1427', name: 'Accessory 5', path: '/media/accessories/IMG_1427.png', thumbnail: '/media/accessories/IMG_1427.png' },
+  { id: 'IMG_1428', name: 'Accessory 6', path: '/media/accessories/IMG_1428.png', thumbnail: '/media/accessories/IMG_1428.png' },
+  { id: 'IMG_1429', name: 'Accessory 7', path: '/media/accessories/IMG_1429.png', thumbnail: '/media/accessories/IMG_1429.png' },
+  { id: 'IMG_1430', name: 'Accessory 8', path: '/media/accessories/IMG_1430.png', thumbnail: '/media/accessories/IMG_1430.png' },
+  { id: 'IMG_1436', name: 'Accessory 9', path: '/media/accessories/IMG_1436.png', thumbnail: '/media/accessories/IMG_1436.png' },
+  { id: 'IMG_1437', name: 'Accessory 10', path: '/media/accessories/IMG_1437.png', thumbnail: '/media/accessories/IMG_1437.png' },
+];
+
 export const BACKGROUNDS: Background[] = [
   { id: 'bg-gold', name: 'Yellow Gold', type: 'solid', value: '#FFD700' },
   { id: 'bg-pink', name: 'Hot Pink', type: 'solid', value: '#FF1493' },

@@ -12,13 +12,15 @@ export interface Background {
   value: string;
 }
 
-export type ComponentType = 'hat' | 'body' | 'background';
+export type ComponentType = 'hat' | 'body' | 'background' | 'accessory';
 
 export interface GeneratorState {
   selectedHat: string | null;
   selectedBody: string | null;
+  selectedAccessory: string | null;
   selectedBackground: string;
   setSelectedHat: (id: string | null) => void;
   setSelectedBody: (id: string | null) => void;
+  setSelectedAccessory: (id: string | null) => void;
   setSelectedBackground: (id: string) => void;
 }
