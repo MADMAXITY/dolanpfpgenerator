@@ -34,6 +34,7 @@ export const HATS: ComponentItem[] = [
   { id: 'IMG_1491', name: 'Hat 22', path: '/media/hats/IMG_1491.png', thumbnail: '/media/hats/IMG_1491.png' },
   { id: 'IMG_1518', name: 'Hat 23', path: '/media/hats/IMG_1518.png', thumbnail: '/media/hats/IMG_1518.png' },
   { id: 'IMG_1519', name: 'Hat 24', path: '/media/hats/IMG_1519.png', thumbnail: '/media/hats/IMG_1519.png' },
+  { id: 'IMG_1539', name: 'Hat 25', path: '/media/hats/IMG_1539.png', thumbnail: '/media/hats/IMG_1539.png' },
 ];
 
 export const BODIES: ComponentItem[] = [
@@ -79,6 +80,9 @@ export const BODIES: ComponentItem[] = [
   { id: 'IMG_1521', name: 'Body 34', path: '/media/bodies/IMG_1521.png', thumbnail: '/media/bodies/IMG_1521.png' },
   { id: 'IMG_1522', name: 'Body 35', path: '/media/bodies/IMG_1522.png', thumbnail: '/media/bodies/IMG_1522.png' },
   { id: 'IMG_1523', name: 'Body 36', path: '/media/bodies/IMG_1523.png', thumbnail: '/media/bodies/IMG_1523.png' },
+  { id: 'IMG_1527', name: 'Body 37', path: '/media/bodies/IMG_1527.png', thumbnail: '/media/bodies/IMG_1527.png' },
+  { id: 'IMG_1530', name: 'Body 38', path: '/media/bodies/IMG_1530.png', thumbnail: '/media/bodies/IMG_1530.png' },
+  { id: 'IMG_1538', name: 'Body 39', path: '/media/bodies/IMG_1538.png', thumbnail: '/media/bodies/IMG_1538.png' },
 ];
 
 export const ACCESSORIES: ComponentItem[] = [
@@ -99,6 +103,11 @@ export const ACCESSORIES: ComponentItem[] = [
   { id: 'IMG_1510', name: 'Accessory 16', path: '/media/accessories/IMG_1510.png', thumbnail: '/media/accessories/IMG_1510.png', layer: 'front' },
   { id: 'IMG_1511', name: 'Accessory 17', path: '/media/accessories/IMG_1511.png', thumbnail: '/media/accessories/IMG_1511.png', layer: 'behind' },
   { id: 'IMG_1512', name: 'Accessory 18', path: '/media/accessories/IMG_1512.png', thumbnail: '/media/accessories/IMG_1512.png', layer: 'front' },
+  { id: 'IMG_1533', name: 'Accessory 19', path: '/media/accessories/IMG_1533.png', thumbnail: '/media/accessories/IMG_1533.png', layer: 'front' },
+  { id: 'IMG_1534', name: 'Accessory 20', path: '/media/accessories/IMG_1534.png', thumbnail: '/media/accessories/IMG_1534.png', layer: 'front' },
+  { id: 'IMG_1535', name: 'Accessory 21', path: '/media/accessories/IMG_1535.png', thumbnail: '/media/accessories/IMG_1535.png', layer: 'front' },
+  { id: 'IMG_1536', name: 'Accessory 22', path: '/media/accessories/IMG_1536.png', thumbnail: '/media/accessories/IMG_1536.png', layer: 'front' },
+  { id: 'IMG_1537', name: 'Accessory 23', path: '/media/accessories/IMG_1537.png', thumbnail: '/media/accessories/IMG_1537.png', layer: 'front' },
 ];
 
 export const BACKGROUNDS: Background[] = [
